@@ -150,7 +150,6 @@
             );
 
             if (entradasEncontradas.length === 0) {
-                alert('Não foi registrado entradas para este produto até o momento.'); // Adiciona um alerta
                 resultadosContainer.innerHTML = '<p>Nenhum produto encontrado.</p>';
                 return;
             }
@@ -204,6 +203,7 @@
             });
 
             if (!temEntrada) {
+                alert('Não foi registrado entradas para este produto até o momento.'); // Adiciona um alerta
                 entradasContainer.innerHTML = '<p>Nenhum produto entrou.</p>';
             }
         }
